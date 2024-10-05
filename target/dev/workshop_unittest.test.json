@@ -1,0 +1,1 @@
+{"contracts_info":[["0x3a0e00fb3e95b026fd256f1f80fdcc46eb509227773bf33f90f0fb70d99704d",{"constructor":{"id":0,"debug_name":"workshop::counter::counter_contract::__wrapper__constructor"},"externals":[],"l1_handlers":[]}]],"function_set_costs":[[{"id":0,"debug_name":null},{"Const":10000}]],"named_tests":[]}

@@ -34,12 +34,16 @@ use workshop::counter::ICounter;
     #[abi(embed_v0)]
     impl CounterImpl of ICounter<ContractState> {
         fn get_counter(self: @ContractState) -> u32 {
+            // let value = self.counter.read();
+            // return value;
             self.counter.read()
         }
 
         fn increase_counter(ref self: ContractState) {
-            self.counter.write(self.get_counter() + 1 );
+            // let value = self.get_counter();
+            // self.counter.write(value + 1);
 
+            self.counter.write(self.get_counter() + 1 );
             self.emit(CounterIncreased{value: self.counter.read()});
         }
     }

@@ -16,4 +16,5 @@ snforge_std = { git = "https://github.com/foundry-rs/starknet-foundry.git", tag 
 test = "snforge test"
 
 [[target.starknet-contract]]
+build-external-contracts = ["kill_switch::KillSwitch"]
 casm = true
